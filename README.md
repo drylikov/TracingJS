@@ -1,6 +1,4 @@
-# @vercel/tracing-js 
-
-[![npm](https://badgen.net/npm/v/@vercel/tracing-js)](https://www.npmjs.com/package/@vercel/tracing-js) [![install size](https://badgen.net/packagephobia/install/@vercel/tracing-js)](https://packagephobia.now.sh/result?p=@vercel/tracing-js) [![circleci](https://badgen.net/circleci/github/vercel/tracing-js)](https://circleci.com/gh/vercel/workflows/tracing-js)
+# Tracing-js 
 
 A partial implementation of the [OpenTracing JavaScript API](https://opentracing-javascript.surge.sh) for [honeycomb.io](https://www.honeycomb.io) backend.
 
@@ -113,4 +111,4 @@ async function handler(req: IncomingMessage, res: ServerResponse) {
 micro(handler).listen(3000);
 ```
 
-See a complete example of multi-service tracing in the [examples](https://github.com/vercel/tracing-js/tree/master/examples) directory.
+See a complete example of multi-service tracing in the [examples](https://github.com/drylikov/TracingJS/tree/drylikov/examples) directory.
