@@ -1,0 +1,41 @@
+{
+  "name": "@vercel/tracing-js",
+  "version": "0.5.1",
+  "description": "A partial implementation of the Opentracing JavaScript API for honeycomb.io backend",
+  "main": "dist/src/index.js",
+  "files": [
+    "dist/src/**",
+    "dist/types/**"
+  ],
+  "scripts": {
+    "build": "tsc && yarn copy-types",
+    "watch": "tsc --watch",
+    "copy-types": "copyfiles -u 1 './types/**/*.d.ts' dist/types",
+    "fmt": "prettier --single-quote --bracket-spacing --trailing-comma all --write './{src,test,types,examples}/**/*.ts'",
+    "test": "tape dist/test/**.js",
+    "test-coverage": "npx c8 --reporter=lcov tape -r ts-node/register test/**.ts && npx codecov"
+  },
+  "repository": "vercel/tracing-js",
+  "author": "styfle",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "@types/node-fetch": "^2.1.6",
+    "@types/tape": "^4.2.33",
+    "copyfiles": "^2.1.0",
+    "node-fetch": "^2.3.0",
+    "prettier": "^1.16.4",
+    "tape": "^4.10.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "libhoney": "^1.2.1"
+  },
+  "peerDependencies": {
+    "node-fetch": "*"
+  }
+}
