@@ -1,4 +1,4 @@
-# Tracing-js 
+# Tracing JS 
 
 A partial implementation of the [OpenTracing JavaScript API](https://opentracing-javascript.surge.sh) for [honeycomb.io](https://www.honeycomb.io) backend.
 
@@ -9,7 +9,7 @@ A partial implementation of the [OpenTracing JavaScript API](https://opentracing
 The minimum code you need to get started is the following:
 
 ```ts
-import { Tracer } from '@vercel/tracing-js';
+import { Tracer } from '@drylikov/TracingJS';
 const tracer = new Tracer({ serviceName }, { writeKey, dataset });
 const span = tracer.startSpan(spanName);
 functionToTrace();
