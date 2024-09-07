@@ -53,7 +53,7 @@ We also use a `DeterministicSampler` so that all services will use the same samp
 
 ```ts
 import micro from 'micro';
-import { Tracer, SpanContext, DeterministicSampler } from '@vercel/tracing-js';
+import { Tracer, SpanContext, DeterministicSampler } from '@drylikov/TracingJS';
 
 const tracer = new Tracer(
   {
